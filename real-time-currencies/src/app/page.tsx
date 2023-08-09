@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
      <h1>Prince Garg</h1>
-     {pokemonImage && pokeData ?
+     {pokemonImage && pokeData && pokeData.name && <p>{pokeData.name}</p> ?
         <>
           <img src={pokemonImage} style={{height:'400px'}}/>
           <p>{pokeData.name}</p>
